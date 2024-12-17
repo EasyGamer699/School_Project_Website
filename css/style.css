@@ -123,4 +123,6 @@ li::marker {
     font-family: "Helvetica";
 }
 
-
+.matrix-effect {
+    height: 2000;
+}
