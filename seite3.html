@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR-Code Generator</h1>
+        <div class="qr-container">
+            <input id="text" type="text" placeholder="Text oder URL eingeben" style="width: 20%" onblur="generateBarCode()" />
+            <button id="generate-btn">QR-Code Generieren</button>
+            <div id="qr-code-container">
+                <img id="barcode" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="QR Code" />
+            </div>
+        </div>
+        <div class="settings">
+            <label for="size">Größe: <span id="size-value">100</span></label>
+            <input type="range" id="size" min="50" max="500" value="100" />
+        </div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>

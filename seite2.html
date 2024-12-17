@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort Generator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Passwort Generator</h1>
+        <div class="password-container">
+            <input type="text" id="password" readonly>
+            <button id="generate-btn">Neu Generieren</button>
+        </div>
+        <div class="settings">
+            <label for="length">Länge: <span id="length-value">12</span></label>
+            <input type="range" id="length" min="8" max="20" value="12">
+        </div>
+        <div class="gif">
+            <img src="gif/monkey.gif" alt="Hacking Monkey" style="width:300px;height:300px; padding: 20px;">
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
