@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    font-family: "Helvetica";
+    text-align: center;
+}
+
+.main-text {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}

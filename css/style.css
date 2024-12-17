@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     background: black;
 }
+
 /*Matrix effect */
 .matrix-effect {
     position: fixed;
@@ -100,7 +101,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-.box2:hover .text,   
+.box2:hover .text,
 .box3:hover .text,
 .box4:hover .text {
     opacity: 1;
@@ -115,12 +116,7 @@ h3 {
 
 /*Lässt den Punkt der Liste Verschwinden */
 li::marker {
-    content: ""; 
-}
-
-.video-box {
-    text-align: center;
-    font-family: "Helvetica";
+    content: "";
 }
 
 .matrix-effect {
