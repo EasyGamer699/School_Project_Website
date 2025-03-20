@@ -1,10 +1,20 @@
+/* Base styles for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
     background: black;
+    font-family: "Helvetica", Arial, sans-serif;
+    color: white;
+    text-align: center;
 }
 
-/*Matrix effect */
+/* Main page styles with Matrix effect */
 .matrix-effect {
     position: fixed;
     top: 0;
@@ -13,6 +23,7 @@ body {
     height: 100%;
     z-index: 1;
     pointer-events: none;
+    height: 2000;
 }
 
 .main {
@@ -49,17 +60,11 @@ h3 {
     margin: 0;
 }
 
-body {
-    overflow: hidden;
-}
-
-
 .box2,
 .box3,
 .box4 {
-    width: 900px;
-    max-width: 90%;
-    height: 70px;
+    width: 990px;
+    height: 30px;
     border: 1px solid white;
     color: white;
     text-align: center;
@@ -72,18 +77,7 @@ body {
     position: relative;
     transition: height 0.5s ease, background-color 0.3s ease;
     overflow: hidden;
-    width: 990px;
-    height: 30px;
 }
-
-
-h3 {
-    margin: 0;
-    font-size: 1.5em;
-    position: relative;
-    z-index: 2;
-}
-
 
 .text {
     opacity: 0;
@@ -92,7 +86,7 @@ h3 {
     margin-top: 10px;
 }
 
-/*Animations Dingsbums */
+/* Box animations */
 .box2:hover,
 .box3:hover,
 .box4:hover {
@@ -114,11 +108,138 @@ h3 {
     font-family: "Helvetica";
 }
 
-/*Lässt den Punkt der Liste Verschwinden */
+/* Removes list markers */
 li::marker {
     content: "";
 }
 
-.matrix-effect {
-    height: 2000;
+/* Password generator page styles */
+.container {
+    text-align: center;
+}
+
+.password-container {
+    margin-bottom: 20px;
+}
+
+#password {
+    background-color: #1e1e1e;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 300px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+button {
+    background-color: #6200ea;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #6200ea;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#length-value, #size-value {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #6200ea;
+}
+
+/* QR code generator page styles */
+.qr-container {
+    margin-bottom: 20px;
+}
+
+#text {
+    background-color: #1e1e1e;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#qr-code-container {
+    margin-top: 20px;
+}
+
+#barcode {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* IP info page styles */
+.info-box {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Video page styles */
+.main-text {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* App-like layout for tool pages */
+body.tool-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6200ea;
 }
